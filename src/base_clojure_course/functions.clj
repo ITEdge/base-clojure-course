@@ -35,7 +35,8 @@
 
 (filter (fn [n] (> n 3)) numbers) ; returns '(4 5 6 7)
 
-(reduce (fn [acc n] (* acc n)) numbers) ; returns 5040
+(reduce (fn [acc n] 
+          (* acc n)) 1 '(1 2 3 4 5 6 7))             ; returns 5040
 
 (reduce * numbers) ; returns 5040
 
